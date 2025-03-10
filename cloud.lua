@@ -64,6 +64,32 @@ local Tabs = {
 
 
     Tabs.Universal:AddButton({
+        Title = "nameless admin",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing nameless admin",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+    Tabs.Universal:AddButton({
         Title = "Tpwalk v4 | beta",
         Description = "<3",
         Callback = function()
@@ -251,30 +277,7 @@ local Tabs = {
 
 
 
-    Tabs.Universal:AddButton({
-        Title = "nameless admin",
-        Description = "<3",
-        Callback = function()
-            Window:Dialog({
-                Title = "Are you sure?",
-                Content = "You are executing nameless admin",
-                Buttons = {
-                    {
-                        Title = "Confirm",
-                        Callback = function()
-                            loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
-                        end
-                    },
-                    {
-                        Title = "Cancel",
-                        Callback = function()
-                            
-                        end
-                    }
-                }
-            })
-        end
-    })
+
 
 
     
