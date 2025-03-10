@@ -28,6 +28,7 @@ local Tabs = {
     NDS = Window:AddTab({ Title = "Natural disaster survival", Icon = "" }),
     BSS = Window:AddTab({ Title = "Bee swarm simulator", Icon = "" }),
     FE2 = Window:AddTab({ Title = "Flood escape 2", Icon = "" }),
+    KAT = Window:AddTab({ Title = "Kat", Icon = "" }),
 }
 
 
@@ -36,7 +37,7 @@ local Tabs = {
         Content = "@poison.py"
     })
 
-
+                -- Universal
         Tabs.Universal:AddButton({
         Title = "Infinite yield",
         Description = "<3",
@@ -314,7 +315,7 @@ local Tabs = {
 
 
 
-
+                --lt2
         Tabs.lt2:AddButton({
         Title = "Kron hub",
         Description = "<3",
@@ -341,6 +342,8 @@ local Tabs = {
     })
 
 
+
+                    -- Blue lock rivals
             Tabs.BLR:AddButton({
         Title = "Tbao hub",
         Description = "<3",
@@ -392,6 +395,8 @@ local Tabs = {
     })
 
 
+
+                            -- MM2
                 Tabs.MM2:AddButton({
         Title = "overdrive h lite",
         Description = "<3 Broken",
@@ -473,6 +478,7 @@ local Tabs = {
     })
 
 
+                    -- Fisch
     Tabs.Fisch:AddButton({
         Title = "Speed hub",
         Description = "<3 ",
@@ -498,7 +504,7 @@ local Tabs = {
         end
     })
 
-
+                    -- Arsenal
     Tabs.Arsenal:AddButton({
         Title = "Thunder client",
         Description = "<3 ",
@@ -551,7 +557,7 @@ local Tabs = {
         end
     })
 
-
+                    -- Fling things and people
         Tabs.FTAP:AddButton({
         Title = "Blitz",
         Description = "<3 ",
@@ -579,7 +585,7 @@ local Tabs = {
 
 
 
-
+                            -- Blade ball
             Tabs.BladeBall:AddButton({
         Title = "Star x",
         Description = "<3 ",
@@ -606,7 +612,7 @@ local Tabs = {
     })
 
 
-
+                    -- Rivals
     Tabs.Rivals:AddButton({
         Title = "8bit",
         Description = "<3 ",
@@ -632,7 +638,7 @@ local Tabs = {
         end
     })
 
-
+                -- Combat warriors
     Tabs.CW:AddButton({
         Title = "Hitbox expander",
         Description = "<3 ",
@@ -660,7 +666,7 @@ local Tabs = {
 
 
 
-
+                    -- Natural disaster survival
     Tabs.NDS:AddButton({
         Title = "Kron hub",
         Description = "<3",
@@ -689,7 +695,7 @@ local Tabs = {
 
 
 
-
+                -- Bee swarm simulator
     Tabs.BSS:AddButton({
         Title = "Kron hub",
         Description = "<3",
@@ -717,7 +723,7 @@ local Tabs = {
 
 
 
-
+                -- Flood escape 2
     Tabs.FE2:AddButton({
         Title = "Cf",
         Description = "<3",
@@ -730,6 +736,34 @@ local Tabs = {
                         Title = "Confirm",
                         Callback = function()
                             loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/random/main/waves.lua'))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+
+    Tabs.KAT:AddButton({
+        Title = "Owl hub",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Owl hub",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
                         end
                     },
                     {
