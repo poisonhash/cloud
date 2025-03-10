@@ -12,7 +12,7 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.RightShift 
 })
 
--- 13 games supported
+
 local Tabs = {
     Credits = Window:AddTab({ Title = "Credits", Icon = "" }),
     Universal = Window:AddTab({ Title = "Universal", Icon = "" }),
@@ -29,6 +29,7 @@ local Tabs = {
     BSS = Window:AddTab({ Title = "Bee swarm simulator", Icon = "" }),
     FE2 = Window:AddTab({ Title = "Flood escape 2", Icon = "" }),
     KAT = Window:AddTab({ Title = "Kat", Icon = "" }),
+    BABFT = Window:AddTab({ Title = "Build A Boat For Treasure", Icon = "" }),
 }
 
 
@@ -764,6 +765,60 @@ local Tabs = {
                         Title = "Confirm",
                         Callback = function()
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+    Tabs.BABFT:AddButton({
+        Title = "Auto farm",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Auto farm",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://orbitsc.net/babft"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+    Tabs.BABFT:AddButton({
+        Title = "Better auto farm",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Better auto farm",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet('https://raw.githubusercontent.com/TheRealAsu/BABFT/refs/heads/main/Jan25_Source.lua'))()
                         end
                     },
                     {
