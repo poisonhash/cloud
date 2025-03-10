@@ -62,7 +62,110 @@ local Tabs = {
     })
 
 
+    Tabs.Universal:AddButton({
+        Title = "Tpwalk v4 | beta",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Tpwalk v4 | beta",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealXORA/Roblox/032418166a40fd7a610fd7a17a2f8ade0da3c734/Tpwalk%20V4%20%5B%20BETA%20%5D.lua",true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
 
+
+
+
+    Tabs.Universal:AddButton({
+        Title = "Full bright",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Full bright",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/poisonhash/cloud/refs/heads/main/fullbright.lua",true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+    Tabs.Universal:AddButton({
+        Title = "Blissful skeleton esp",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Blissful skeleton esp",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/ESPs/refs/heads/main/UniversalSkeleton.lua",true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+    Tabs.Universal:AddButton({
+        Title = "Azure modded",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Azure modded",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
 
 
 
