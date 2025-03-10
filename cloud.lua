@@ -12,7 +12,7 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.RightShift 
 })
 
-
+-- 13 games supported
 local Tabs = {
     Credits = Window:AddTab({ Title = "Credits", Icon = "" }),
     Universal = Window:AddTab({ Title = "Universal", Icon = "" }),
