@@ -7,7 +7,7 @@ local Window = Fluent:CreateWindow({
     SubTitle = "Cryptic script hub",
     TabWidth = 180,
     Size = UDim2.fromOffset(580, 460),
-    Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
+    Acrylic = true, 
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.RightControl 
 })
@@ -26,6 +26,7 @@ local Tabs = {
     BLR = Window:AddTab({ Title = "Blue lock rivals", Icon = "" }),
     CW = Window:AddTab({ Title = "Combat warriors", Icon = "" }),
     NDS = Window:AddTab({ Title = "Natural disaster survival", Icon = "" }),
+    BSS = Window:AddTab({ Title = "Bee swarm simulator", Icon = "" }),
 }
 
 
@@ -119,58 +120,7 @@ local Tabs = {
 
 
     
-        Tabs.Universal:AddButton({
-        Title = "Jerk off r15",
-        Description = "<3",
-        Callback = function()
-            Window:Dialog({
-                Title = "Are you sure?",
-                Content = "You are executing Jerk off",
-                Buttons = {
-                    {
-                        Title = "Confirm",
-                        Callback = function()
-                            loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
-                        end
-                    },
-                    {
-                        Title = "Cancel",
-                        Callback = function()
-                            
-                        end
-                    }
-                }
-            })
-        end
-    })
 
-
-
-
-        Tabs.Universal:AddButton({
-        Title = "Jerk off r6",
-        Description = "<3",
-        Callback = function()
-            Window:Dialog({
-                Title = "Are you sure?",
-                Content = "You are executing Jerk off",
-                Buttons = {
-                    {
-                        Title = "Confirm",
-                        Callback = function()
-                            loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))()
-                        end
-                    },
-                    {
-                        Title = "Cancel",
-                        Callback = function()
-                            
-                        end
-                    }
-                }
-            })
-        end
-    })
 
 
 
@@ -498,6 +448,35 @@ local Tabs = {
 
 
     Tabs.NDS:AddButton({
+        Title = "Kron hub",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Kron hub",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet('https://raw.githubusercontent.com/DevKron/Kron_Hub/refs/heads/main/version_1.0'))("")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+
+
+    Tabs.BSS:AddButton({
         Title = "Kron hub",
         Description = "<3",
         Callback = function()
