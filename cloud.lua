@@ -7,9 +7,9 @@ local Window = Fluent:CreateWindow({
     SubTitle = "Cryptic script hub",
     TabWidth = 180,
     Size = UDim2.fromOffset(580, 460),
-    Acrylic = true, 
+    Acrylic = true,
     Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.RightControl 
+    MinimizeKey = Enum.KeyCode.RightShift 
 })
 
 
@@ -27,6 +27,7 @@ local Tabs = {
     CW = Window:AddTab({ Title = "Combat warriors", Icon = "" }),
     NDS = Window:AddTab({ Title = "Natural disaster survival", Icon = "" }),
     BSS = Window:AddTab({ Title = "Bee swarm simulator", Icon = "" }),
+    FE2 = Window:AddTab({ Title = "Flood escape 2", Icon = "" }),
 }
 
 
@@ -195,6 +196,60 @@ local Tabs = {
     })
 
 
+    Tabs.Universal:AddButton({
+        Title = "R6 jerk off",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing R6 jerk off",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+    Tabs.Universal:AddButton({
+        Title = "R15 jerk off",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing R15 jerk off",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
 
     Tabs.Universal:AddButton({
         Title = "nameless admin",
@@ -360,6 +415,33 @@ local Tabs = {
         end
     })
 
+
+
+    
+    Tabs.MM2:AddButton({
+        Title = "Xhub",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Xhub",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
 
 
     Tabs.Fisch:AddButton({
@@ -591,6 +673,34 @@ local Tabs = {
                         Title = "Confirm",
                         Callback = function()
                             loadstring(game:HttpGet('https://raw.githubusercontent.com/DevKron/Kron_Hub/refs/heads/main/version_1.0'))("")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+
+    Tabs.FE2:AddButton({
+        Title = "Cf",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Cf",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/random/main/waves.lua'))()
                         end
                     },
                     {
