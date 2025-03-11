@@ -837,6 +837,33 @@ local Tabs = {
     })
 
 
+
+    Tabs.BABFT:AddButton({
+        Title = "Renn hub",
+        Description = "<3 (do the linkify thing for the key its easier)",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Renn hub",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet"https://raw.githubusercontent.com/Reyn7525/RenHub/refs/heads/main/Loader")()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
     Tabs.abws:AddButton({
         Title = "Apex hub",
         Description = "<3 key: abilityywarss",
