@@ -12,7 +12,7 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.RightShift 
 })
 
- -- 18 games!!
+ -- 20 games!!
 local Tabs = {
     Credits = Window:AddTab({ Title = "Credits", Icon = "" }),
     Universal = Window:AddTab({ Title = "Universal", Icon = "" }),
@@ -34,6 +34,7 @@ local Tabs = {
     MADCITY = Window:AddTab({ Title = "Mad city", Icon = "" }),
     NinjaLegends = Window:AddTab({ Title = "Ninja legends", Icon = "" }),
     fias = Window:AddTab({ Title = "fight in a school", Icon = "" }),
+    DEADR = Window:AddTab({ Title = "Dead rails", Icon = "" }),
 }
 
 
@@ -961,6 +962,34 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Zepsyy2/asd/main/Ninj
                         Title = "Confirm",
                         Callback = function()
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/notjohnnylol/Ayana/refs/heads/main/fightinaschool"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+
+    Tabs.DEADR:AddButton({
+        Title = "Ren hub",
+        Description = "<3 (use linkify for the key system)",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Ren hub",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet"https://raw.githubusercontent.com/Reyn7525/RenHub/refs/heads/main/Loader")()
                         end
                     },
                     {
