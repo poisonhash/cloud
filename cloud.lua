@@ -12,7 +12,7 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.RightShift 
 })
 
- -- 17 games!!
+ -- 18 games!!
 local Tabs = {
     Credits = Window:AddTab({ Title = "Credits", Icon = "" }),
     Universal = Window:AddTab({ Title = "Universal", Icon = "" }),
@@ -33,6 +33,7 @@ local Tabs = {
     abws = Window:AddTab({ Title = "Ability wars", Icon = "" }),
     MADCITY = Window:AddTab({ Title = "Mad city", Icon = "" }),
     NinjaLegends = Window:AddTab({ Title = "Ninja legends", Icon = "" }),
+    fias = Window:AddTab({ Title = "fight in a school", Icon = "" }),
 }
 
 
@@ -903,7 +904,36 @@ local Tabs = {
                     {
                         Title = "Confirm",
                         Callback = function()
-                            local Owner = "Zepsyy" loadstring(game:HttpGet("https://raw.githubusercontent.com/Zepsyy2/asd/main/Ninja%20Legends.lua"))()
+                            local Owner = "Zepsyy"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zepsyy2/asd/main/Ninja%20Legends.lua"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+
+    Tabs.fias:AddButton({
+        Title = "Ayana",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Ayana",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/notjohnnylol/Ayana/refs/heads/main/fightinaschool"))()
                         end
                     },
                     {
