@@ -12,7 +12,7 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.RightShift 
 })
 
- -- 15 games!!
+ -- 17 games!!
 local Tabs = {
     Credits = Window:AddTab({ Title = "Credits", Icon = "" }),
     Universal = Window:AddTab({ Title = "Universal", Icon = "" }),
@@ -31,6 +31,8 @@ local Tabs = {
     KAT = Window:AddTab({ Title = "Kat", Icon = "" }),
     BABFT = Window:AddTab({ Title = "Build A Boat For Treasure", Icon = "" }),
     abws = Window:AddTab({ Title = "Ability wars", Icon = "" }),
+    MADCITY = Window:AddTab({ Title = "Mad city", Icon = "" }),
+    NinjaLegends = Window:AddTab({ Title = "Ninja legends", Icon = "" }),
 }
 
 
@@ -846,6 +848,62 @@ local Tabs = {
                         Title = "Confirm",
                         Callback = function()
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/Apex-xyz/rbversions/refs/heads/main/loader.lua"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+
+    Tabs.MADCITY:AddButton({
+        Title = "ProBacon",
+        Description = "<3 kinda buggy",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing ProBacon",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/ProBaconHub/ProBaconGUI/main/-ProBaconGuiLoader.lua?and="..math.random(), true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+
+    Tabs.NinjaLegends:AddButton({
+        Title = "Zepsyy",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Zepsyy",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            local Owner = "Zepsyy" loadstring(game:HttpGet("https://raw.githubusercontent.com/Zepsyy2/asd/main/Ninja%20Legends.lua"))()
                         end
                     },
                     {
