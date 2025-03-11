@@ -12,7 +12,7 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.RightShift 
 })
 
-
+ -- 15 games!!
 local Tabs = {
     Credits = Window:AddTab({ Title = "Credits", Icon = "" }),
     Universal = Window:AddTab({ Title = "Universal", Icon = "" }),
@@ -30,6 +30,7 @@ local Tabs = {
     FE2 = Window:AddTab({ Title = "Flood escape 2", Icon = "" }),
     KAT = Window:AddTab({ Title = "Kat", Icon = "" }),
     BABFT = Window:AddTab({ Title = "Build A Boat For Treasure", Icon = "" }),
+    abws = Window:AddTab({ Title = "Ability wars", Icon = "" }),
 }
 
 
@@ -819,6 +820,32 @@ local Tabs = {
                         Title = "Confirm",
                         Callback = function()
                             loadstring(game:HttpGet('https://raw.githubusercontent.com/TheRealAsu/BABFT/refs/heads/main/Jan25_Source.lua'))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+    Tabs.abws:AddButton({
+        Title = "Apex hub",
+        Description = "<3 key: abilityywarss",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Apex hub",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Apex-xyz/rbversions/refs/heads/main/loader.lua"))()
                         end
                     },
                     {
