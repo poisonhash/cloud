@@ -43,6 +43,11 @@ local Tabs = {
         Content = "@poison.py"
     })
 
+
+    Tabs.Credits:AddParagraph({
+        Title = "Helped add scripts",
+        Content = "@nikusik892"
+    })
                 -- Universal
         Tabs.Universal:AddButton({
         Title = "Infinite yield",
