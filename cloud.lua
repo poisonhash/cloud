@@ -839,12 +839,12 @@ local Tabs = {
 
 
     Tabs.BABFT:AddButton({
-        Title = "Renn hub",
+        Title = "Ren hub",
         Description = "<3 (do the linkify thing for the key its easier)",
         Callback = function()
             Window:Dialog({
                 Title = "Are you sure?",
-                Content = "You are executing Renn hub",
+                Content = "You are executing Ren hub",
                 Buttons = {
                     {
                         Title = "Confirm",
