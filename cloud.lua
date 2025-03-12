@@ -12,7 +12,7 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.RightShift 
 })
 
- -- 20 games!!
+ -- 21 games!!
 local Tabs = {
     Credits = Window:AddTab({ Title = "Credits", Icon = "" }),
     Universal = Window:AddTab({ Title = "Universal", Icon = "" }),
@@ -35,6 +35,7 @@ local Tabs = {
     NinjaLegends = Window:AddTab({ Title = "Ninja legends", Icon = "" }),
     fias = Window:AddTab({ Title = "fight in a school", Icon = "" }),
     DEADR = Window:AddTab({ Title = "Dead rails", Icon = "" }),
+    brbi = Window:AddTab({ Title = "Broken bones iv", Icon = "" }),
 }
 
 
@@ -73,6 +74,33 @@ local Tabs = {
             })
         end
     })
+
+
+    Tabs.Universal:AddButton({
+        Title = "Express hub",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Express hub",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/d8824b23a4d9f2e0d62b4e69397d206b.lua"))() 
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
 
 
     Tabs.Universal:AddButton({
@@ -475,6 +503,34 @@ local Tabs = {
                         Title = "Confirm",
                         Callback = function()
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+
+    Tabs.MM2:AddButton({
+        Title = "Yhub",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing Yhub",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Luarmor123/YHUB-Community/refs/heads/main/Murder-Mystery2"))()
                         end
                     },
                     {
@@ -995,6 +1051,33 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Zepsyy2/asd/main/Ninj
                         Title = "Confirm",
                         Callback = function()
                             loadstring(game:HttpGet"https://raw.githubusercontent.com/Reyn7525/RenHub/refs/heads/main/Loader")()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+    Tabs.brbi:AddButton({
+        Title = "inf money",
+        Description = "<3",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you sure?",
+                Content = "You are executing inf money",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            loadstring(game:HttpGet('https://rawscripts.net/raw/Broken-Bones-IV-Ragdoll-Sim-Infinite-money-19709'))()
                         end
                     },
                     {
