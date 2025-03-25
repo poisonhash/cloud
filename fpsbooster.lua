@@ -1,4 +1,3 @@
-local Players = game:GetService("Players")
 
 local function cleanCharacter(character)
     for _, child in ipairs(character:GetChildren()) do
